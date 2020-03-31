@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    background: $intro-blue;
+}
+
+ul,
+h1,
+h2,
+h3 {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+}
+
+p {
+    color: white;
+
+    @media only screen and (min-width: 768px) {
+        font-size: 1.10em;
+    }
+}

@@ -1,0 +1,39 @@
+header {
+    display: grid;
+    grid-template-areas: "Logo Menu";
+    grid-template-columns: auto auto;
+    padding: 22px 20px 43px 20px;
+
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+        padding: 50px 50px;
+    }
+
+    @media screen and (min-width: 1025px) and (max-width: 1440px) {
+        padding: 70px 80px;
+    }
+
+    img {
+        grid-area: Logo;
+        width: 76px;
+
+        @media screen and (min-width: 768px) {
+            width: 179px;
+        }
+    }
+
+    nav {
+        grid-area: Menu;
+
+        ul {
+            height: 100%;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            li {
+                margin-left: 21px;
+            }
+        }
+    }
+}
