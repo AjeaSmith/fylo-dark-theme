@@ -207,3 +207,27 @@ header nav ul li {
     height: 65vh;
   }
 }
+
+.features {
+  padding: 116px 33px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (auto)[4];
+      grid-template-rows: repeat(4, auto);
+  row-gap: 72px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .features {
+    padding: 116px 100px;
+  }
+}
+
+.features .feature h2 {
+  margin: 0.6em 0;
+}
+
+.features .feature p {
+  line-height: 1.5;
+}

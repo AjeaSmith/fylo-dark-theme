@@ -130,6 +130,25 @@ header {
     }
 }
 
-// .features {
-//     background-color: $main-blue;
-// }
+.features {
+    padding: 116px 33px;
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    row-gap: 72px;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+        padding: 116px 100px;
+    }
+
+    .feature {
+        h2 {
+            margin: 0.6em 0;
+        }
+
+        p {
+            line-height: 1.5;
+
+        }
+    }
+}
