@@ -29,6 +29,12 @@ p {
   }
 }
 
+.features,
+.testimonal,
+.newsletter {
+  background-color: #181f2a;
+}
+
 header {
   display: -ms-grid;
   display: grid;
@@ -182,7 +188,7 @@ header nav ul li {
   content: "";
   position: absolute;
   bottom: 0;
-  background: url("../images/bg-curvy-mobile.svg");
+  background-image: url(../images/bg-curvy-mobile.svg);
   background-repeat: no-repeat;
   background-position: bottom center;
   background-size: 100% 39vh;
