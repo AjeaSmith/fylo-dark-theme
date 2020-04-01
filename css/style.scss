@@ -1,5 +1,5 @@
-@import 'scss/variables.scss';
-@import 'scss/global.scss';
+@import 'variables.scss';
+@import 'global.scss';
 
 header {
     display: grid;
@@ -119,7 +119,7 @@ header {
         height: 55vh;
         z-index: -1;
 
-        @media only screen and (min-width: 1025px) {
+        @media screen and (min-width: 1025px) {
             background: url("../images/bg-curvy-desktop.svg");
             background-repeat: no-repeat;
             background-position: -280px bottom;
