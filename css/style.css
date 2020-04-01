@@ -199,7 +199,7 @@ header nav ul li {
   z-index: -1;
 }
 
-@media only screen and (min-width: 1025px) {
+@media screen and (min-width: 1025px) {
   .hero:after {
     background-image: url("../images/bg-curvy-desktop.svg");
     background-repeat: no-repeat;
