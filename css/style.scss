@@ -89,7 +89,10 @@ header {
 
         @media only screen and (min-width: 1024px) {
             padding: 0 17em;
+<<<<<<< HEAD
             margin: 31px 0;
+=======
+>>>>>>> 46e79c3bdf834f2e2d8ce787fc33ecd87b7174de
         }
     }
 
@@ -113,7 +116,11 @@ header {
         content: "";
         position: absolute;
         bottom: 0;
+<<<<<<< HEAD
         background-image: url("../images/bg-curvy-mobile.svg");
+=======
+        background-image: url(../images/bg-curvy-mobile.svg);
+>>>>>>> 46e79c3bdf834f2e2d8ce787fc33ecd87b7174de
         background-repeat: no-repeat;
         background-position: bottom center;
         background-size: 100% 39vh;
@@ -122,11 +129,41 @@ header {
         z-index: -1;
 
         @media screen and (min-width: 1025px) {
+<<<<<<< HEAD
             background-image: url("../images/bg-curvy-desktop.svg");
+=======
+            background: url("../images/bg-curvy-desktop.svg");
+>>>>>>> 46e79c3bdf834f2e2d8ce787fc33ecd87b7174de
             background-size: 1440px;
             background-repeat: no-repeat;
             background-position: -280px bottom;
             height: 65vh;
         }
     }
+<<<<<<< HEAD
+=======
+}
+
+.features {
+    padding: 116px 33px;
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    row-gap: 72px;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+        padding: 116px 100px;
+    }
+
+    .feature {
+        h2 {
+            margin: 0.6em 0;
+        }
+
+        p {
+            line-height: 1.5;
+
+        }
+    }
+>>>>>>> 46e79c3bdf834f2e2d8ce787fc33ecd87b7174de
 }
