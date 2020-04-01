@@ -113,7 +113,7 @@ header {
         content: "";
         position: absolute;
         bottom: 0;
-        background: url("./images/bg-curvy-mobile.svg");
+        background: url("/images/bg-curvy-mobile.svg");
         background-repeat: no-repeat;
         background-position: bottom center;
         background-size: 100% 39vh;
@@ -122,7 +122,7 @@ header {
         z-index: -1;
 
         @media only screen and (min-width: 1025px) {
-            background: url("./images/bg-curvy-desktop.svg");
+            background: url("/images/bg-curvy-desktop.svg");
             background-repeat: no-repeat;
             background-position: -280px bottom;
             height: 65vh;
