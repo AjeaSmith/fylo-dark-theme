@@ -28,3 +28,9 @@ p {
     font-size: 1.10em;
   }
 }
+
+.features,
+.testimonal,
+.newsletter {
+  background-color: #181f2a;
+}

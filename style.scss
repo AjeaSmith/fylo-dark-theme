@@ -1,4 +1,131 @@
 @import 'scss/variables.scss';
 @import 'scss/global.scss';
-@import 'scss/header.scss';
-@import 'scss/hero.scss';
+
+header {
+    display: grid;
+    grid-template-areas: "Logo Menu";
+    grid-template-columns: auto auto;
+    padding: 22px 20px 43px 20px;
+
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+        padding: 50px 50px;
+    }
+
+    @media screen and (min-width: 1025px) and (max-width: 1440px) {
+        padding: 70px 80px;
+    }
+
+    img {
+        grid-area: Logo;
+        width: 76px;
+
+        @media screen and (min-width: 768px) {
+            width: 179px;
+        }
+    }
+
+    nav {
+        grid-area: Menu;
+
+        ul {
+            height: 100%;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            li {
+                margin-left: 21px;
+            }
+        }
+    }
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+
+    @media only screen and (min-width: 320px) and (max-width: 768px) {
+        padding: 0 32px;
+    }
+
+    img {
+        width: 100%;
+
+        @media only screen and (min-width: 768px) and (max-width: 1024px) {
+            max-width: 630px;
+        }
+
+        @media only screen and (min-width: 1025px) and (max-width: 1440px) {
+            max-width: 712px;
+        }
+    }
+
+    h1,
+    p {
+        line-height: 1.6;
+    }
+
+    h1 {
+        @media only screen and (min-width: 768px) {
+            font-size: 2.3em;
+        }
+
+        font-size: 1.6em;
+        margin-top: 37px;
+
+        @media only screen and (min-width: 1024px) {
+            padding: 0 5em;
+        }
+    }
+
+    p {
+        margin: 19px 0;
+        padding: 0 1em;
+
+        @media only screen and (min-width: 1024px) {
+            padding: 0 17em;
+            margin: 31px 0;
+        }
+    }
+
+    button {
+        width: 217px;
+        height: 45px;
+        font-weight: 700;
+        border-radius: 30px;
+        background-image: linear-gradient(to right, $CTA-cyan, $CTA-blue);
+        border: none;
+        color: white;
+
+        @media only screen and (min-width: 1024px) and (max-width: 1440px) {
+            width: 283px;
+            height: 58px;
+            font-size: 1.2em;
+        }
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        background: url("/images/bg-curvy-mobile.svg");
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        background-size: 100% 39vh;
+        width: 100%;
+        height: 55vh;
+        z-index: -1;
+
+        @media only screen and (min-width: 1025px) {
+            background: url("/images/bg-curvy-desktop.svg");
+            background-repeat: no-repeat;
+            background-position: -280px bottom;
+            height: 65vh;
+        }
+    }
+}
