@@ -194,6 +194,7 @@ header nav ul li {
 @media screen and (min-width: 1025px) {
   .hero:after {
     background: url("../images/bg-curvy-desktop.svg");
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: -280px bottom;
     height: 65vh;
