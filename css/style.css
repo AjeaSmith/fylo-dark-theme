@@ -198,17 +198,10 @@ header nav ul li {
   z-index: -1;
 }
 
-@media screen and (min-width: 1025px) {
-  .hero:after {
-    background: url("../images/bg-curvy-desktop.svg");
-    background-size: 1440px;
-  }
-}
-
 @media screen and (min-width: 1440px) {
   .hero:after {
     background: url("../images/bg-curvy-desktop.svg");
-    background-size: 100%;
+    background-size: 1440px;
     background-repeat: no-repeat;
     background-position: -2px bottom;
     height: 65vh;
