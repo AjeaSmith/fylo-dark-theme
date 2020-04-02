@@ -30,6 +30,7 @@ p {
 }
 
 .features,
+.productivity,
 .testimonal,
 .newsletter {
   background-color: #181f2a;
@@ -209,7 +210,7 @@ header nav ul li {
 }
 
 .features {
-  padding: 116px 33px;
+  padding: 143px 33px;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: (auto)[4];
@@ -220,19 +221,18 @@ header nav ul li {
 
 @media screen and (min-width: 768px) and (max-width: 1440px) {
   .features {
-    padding: 164px 50px;
+    padding: 164px 50px 20px 50px;
     -ms-grid-columns: auto auto;
         grid-template-columns: auto auto;
     grid-auto-rows: auto auto;
     font-size: 0.9em;
-    -webkit-column-gap: 153px;
-            column-gap: 153px;
+    -webkit-column-gap: 118px;
+            column-gap: 118px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .features {
-    padding: 164px 140px;
     -webkit-column-gap: 153px;
             column-gap: 153px;
   }
@@ -260,4 +260,79 @@ header nav ul li {
 
 .features .feature p {
   line-height: 1.5;
+}
+
+.productivity {
+  padding: 0 24px;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "image" "content";
+  row-gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .productivity {
+    padding: 0 50px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .productivity {
+        grid-template-areas: "image content";
+    -webkit-column-gap: 50px;
+            column-gap: 50px;
+  }
+}
+
+.productivity img {
+  grid-area: "image";
+  width: 279px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .productivity img {
+    width: 100%;
+  }
+}
+
+.productivity .prod_content {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: content;
+}
+
+@media (min-width: 1024px) {
+  .productivity .prod_content {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
+.productivity .prod_content h2 {
+  text-align: center;
+  margin: 0.8em 0;
+}
+
+@media (min-width: 414px) {
+  .productivity .prod_content h2 {
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .productivity .prod_content h2 {
+    text-align: left;
+  }
+}
+
+@media (min-width: 1024px) {
+  .productivity {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
