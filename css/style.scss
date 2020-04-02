@@ -137,11 +137,20 @@ header {
     row-gap: 72px;
     text-align: center;
 
-    @media screen and (min-width: 768px) {
-        padding: 116px 100px;
+    @media screen and (min-width: 768px) and (max-width: 1440px) {
+        padding: 116px 50px;
+        grid-template-columns: auto auto;
+        grid-auto-rows: auto auto;
+        font-size: 0.8em;
+        column-gap: 2.8em;
     }
 
     .feature {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
         h2 {
             margin: 0.6em 0;
         }
