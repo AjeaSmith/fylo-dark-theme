@@ -146,6 +146,7 @@ header nav ul li {
 @media only screen and (min-width: 768px) {
   .hero h1 {
     font-size: 2.3em;
+    color: green;
   }
 }
 
@@ -182,7 +183,6 @@ header nav ul li {
     width: 283px;
     height: 58px;
     font-size: 1.2em;
-    color: green;
   }
 }
 
@@ -206,7 +206,6 @@ header nav ul li {
     background-repeat: no-repeat;
     background-position: -2px bottom;
     height: 65vh;
-    color: green;
   }
 }
 
