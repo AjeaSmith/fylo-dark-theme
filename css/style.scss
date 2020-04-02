@@ -117,10 +117,14 @@ header {
         position: absolute;
         bottom: 0;
 <<<<<<< HEAD
+<<<<<<< HEAD
         background-image: url("../images/bg-curvy-mobile.svg");
 =======
         background-image: url(../images/bg-curvy-mobile.svg);
 >>>>>>> 46e79c3bdf834f2e2d8ce787fc33ecd87b7174de
+=======
+        background-image: url("../images/bg-curvy-mobile.svg");
+>>>>>>> 17957a8fa1d59c3294edd8d57c03133b0a55c5cd
         background-repeat: no-repeat;
         background-position: bottom center;
         background-size: 100% 39vh;
@@ -128,6 +132,7 @@ header {
         height: 55vh;
         z-index: -1;
 
+<<<<<<< HEAD
         @media screen and (min-width: 1025px) {
 <<<<<<< HEAD
             background-image: url("../images/bg-curvy-desktop.svg");
@@ -135,8 +140,13 @@ header {
             background: url("../images/bg-curvy-desktop.svg");
 >>>>>>> 46e79c3bdf834f2e2d8ce787fc33ecd87b7174de
             background-size: 1440px;
+=======
+        @media screen and (min-width: 1440px) {
+            background: url("../images/bg-curvy-desktop.svg");
+            background-size: 100%;
+>>>>>>> 17957a8fa1d59c3294edd8d57c03133b0a55c5cd
             background-repeat: no-repeat;
-            background-position: -280px bottom;
+            background-position: -2px bottom;
             height: 65vh;
         }
     }
