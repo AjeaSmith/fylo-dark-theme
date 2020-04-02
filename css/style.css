@@ -145,7 +145,7 @@ header nav ul li {
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .hero h1 {
-    font-size: 2.8em;
+    font-size: 2em;
   }
 }
 
@@ -205,12 +205,6 @@ header nav ul li {
     background-repeat: no-repeat;
     background-position: -2px bottom;
     height: 65vh;
-  }
-}
-
-@media screen and (min-width: 1441px) and (max-width: 2048px) {
-  .hero:after {
-    background-size: 2048px;
   }
 }
 
