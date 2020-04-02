@@ -208,6 +208,12 @@ header nav ul li {
   }
 }
 
+@media screen and (min-width: 1441px) and (max-width: 2048px) {
+  .hero:after {
+    background-size: 2048px;
+  }
+}
+
 .features {
   padding: 116px 33px;
   display: -ms-grid;
@@ -220,7 +226,7 @@ header nav ul li {
 
 @media screen and (min-width: 768px) and (max-width: 1440px) {
   .features {
-    padding: 116px 50px;
+    padding: 164px 50px;
     -ms-grid-columns: auto auto;
         grid-template-columns: auto auto;
     grid-auto-rows: auto auto;
