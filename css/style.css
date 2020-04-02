@@ -218,10 +218,32 @@ header nav ul li {
   text-align: center;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1440px) {
   .features {
-    padding: 116px 100px;
+    padding: 116px 50px;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    grid-auto-rows: auto auto;
+    font-size: 0.8em;
+    -webkit-column-gap: 2.8em;
+            column-gap: 2.8em;
   }
+}
+
+.features .feature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .features .feature h2 {
