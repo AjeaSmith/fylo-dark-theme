@@ -184,19 +184,26 @@ header {
 
     img {
         grid-area: "image";
-        width: 279px;
         justify-self: center;
 
-        @media (min-width: 1024px) and (max-width: 1440px) {
+        @media (min-width: 376px) and (max-width: 1023px) {
+            width: 80%;
+        }
+
+        @media (min-width:1024px) and (max-width: 1224px) {
             width: 100%;
+        }
+
+        @media (min-width: 1440px) {
+            width: 619px;
         }
     }
 
     .prod_content {
         grid-area: content;
+
         @media (min-width: 1024px) {
             align-self: center;
-            padding: 0 2em;
         }
 
         h2 {
@@ -204,11 +211,29 @@ header {
             margin: 0.8em 0;
 
             @media (min-width: 414px) {
-                font-size: 2em;
+                font-size: 2.7em;
             }
 
             @media (min-width: 1024px) and (max-width: 1440px) {
                 text-align: left;
+            }
+        }
+
+        p.linkstyle {
+            margin: 0.6em 0;
+            color: $CTA-cyan;
+            border-bottom: 1px solid $CTA-cyan;
+            width: 150px;
+
+            @media (min-width: 768px) {
+                width: 167px;
+            }
+
+            &::after {
+                content: url("../images/icon-arrow.svg");
+                text-align: center;
+                margin-left: 0.3em;
+                vertical-align: middle
             }
         }
     }
