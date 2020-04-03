@@ -183,6 +183,7 @@ header {
     }
 
     img {
+        width: 100%;
         grid-area: "image";
         justify-self: center;
 
@@ -204,6 +205,10 @@ header {
 
         @media (min-width: 1024px) {
             align-self: center;
+        }
+
+        @media (min-width: 1024px) {
+            flex-direction: row;
         }
 
         h2 {
@@ -237,8 +242,52 @@ header {
             }
         }
     }
+}
 
-    @media (min-width: 1024px) {
-        flex-direction: row;
+.testimonal {
+    padding: 276px 33px;
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    row-gap: 21px;
+
+    @media (min-width: 600px) and (max-width: 768px) {
+        grid-template-rows: 35px 200px 200px 200px;
+
+        .quote {
+            font-size: 1.4em;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .profile {
+                img {
+                    width: 50px;
+                }
+            }
+
+        }
+    }
+
+    &::before {
+        display: block;
+        content: url("../images/bg-quotes.png");
+    }
+
+    .quote {
+        padding: 2em;
+        color: white;
+        background: $intro-blue;
+        border-radius: 4px;
+
+        img {
+            border-radius: 50px;
+            width: 25px;
+            margin-right: 0.8em;
+        }
+
+        .profile {
+            margin-top: 0.8em;
+            display: flex;
+            align-items: center;
+        }
     }
 }

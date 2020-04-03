@@ -285,6 +285,7 @@ header nav ul li {
 }
 
 .productivity img {
+  width: 100%;
   grid-area: "image";
   -ms-grid-column-align: center;
       justify-self: center;
@@ -319,6 +320,15 @@ header nav ul li {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .productivity .prod_content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
@@ -359,11 +369,62 @@ header nav ul li {
   vertical-align: middle;
 }
 
-@media (min-width: 1024px) {
-  .productivity {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+.testimonal {
+  padding: 276px 33px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto auto auto auto;
+      grid-template-rows: auto auto auto auto;
+  row-gap: 21px;
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+  .testimonal {
+    -ms-grid-rows: 35px 200px 200px 200px;
+        grid-template-rows: 35px 200px 200px 200px;
   }
+  .testimonal .quote {
+    font-size: 1.4em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .testimonal .quote .profile img {
+    width: 50px;
+  }
+}
+
+.testimonal::before {
+  display: block;
+  content: url("../images/bg-quotes.png");
+}
+
+.testimonal .quote {
+  padding: 2em;
+  color: white;
+  background: #1c2431;
+  border-radius: 4px;
+}
+
+.testimonal .quote img {
+  border-radius: 50px;
+  width: 25px;
+  margin-right: 0.8em;
+}
+
+.testimonal .quote .profile {
+  margin-top: 0.8em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
