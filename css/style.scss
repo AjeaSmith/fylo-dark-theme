@@ -251,9 +251,9 @@ header {
 
     .quote_wrapper {
         .quote {
+            background: $test-blue;
             padding: 2em;
             color: white;
-            background: $intro-blue;
             border-radius: 4px;
             margin-bottom: 25px;
 
@@ -268,7 +268,7 @@ header {
                 display: flex;
                 align-items: center;
 
-                .info{
+                .info {
                     font-size: 0.8em;
                 }
             }
@@ -311,8 +311,10 @@ header {
                 padding: 0.8em;
                 height: 100%;
                 line-height: 1.2em;
+
                 .profile {
-                    margin-top:30px;
+                    margin-top: 30px;
+
                     img {
                         width: 30px;
                     }
