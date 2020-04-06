@@ -514,7 +514,7 @@ footer {
     }
 
     @media (min-width:1220px) {
-        padding: 196px 117px 50px 117px;
+        padding: 196px 77px 50px 117px;
         flex-direction: row;
         height: 513px;
 
@@ -532,6 +532,11 @@ footer {
             ul {
                 margin-bottom: 0;
             }
+        }
+
+        .end_menu {
+            display: flex;
+            align-items: center;
         }
     }
 }

@@ -690,7 +690,7 @@ footer .end_menu ul li i {
 
 @media (min-width: 1220px) {
   footer {
-    padding: 196px 117px 50px 117px;
+    padding: 196px 77px 50px 117px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -715,5 +715,13 @@ footer .end_menu ul li i {
   }
   footer .middle_menu ul {
     margin-bottom: 0;
+  }
+  footer .end_menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
