@@ -485,6 +485,9 @@ header nav ul li {
 }
 
 .newsletter .newsletter_box {
+  border-bottom: 0 none;
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.46);
+          box-shadow: 0 1px 5px rgba(0, 0, 0, 0.46);
   background-color: #1c2431;
   border-radius: 8px;
   position: absolute;
