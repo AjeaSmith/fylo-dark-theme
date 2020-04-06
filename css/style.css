@@ -608,5 +608,112 @@ header nav ul li {
 }
 
 footer {
+  padding: 196px 26px 20px 26px;
   background-color: #0b1523;
+  height: 970px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 1.1em;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer .top_menu ul li {
+  margin-bottom: 1.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+footer .top_menu ul li i {
+  margin-right: 0.8em;
+}
+
+footer .top_menu ul li:nth-child(2) {
+  line-height: 1.6em;
+}
+
+footer .middle_menu ul {
+  margin-bottom: 46px;
+}
+
+footer .middle_menu ul li {
+  margin-bottom: 14px;
+}
+
+footer .end_menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .end_menu ul li {
+  margin-right: 1em;
+}
+
+footer .end_menu ul li i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+@media (min-width: 1024px) {
+  footer {
+    padding: 196px 117px 20px 117px;
+  }
+}
+
+@media (min-width: 1220px) {
+  footer {
+    padding: 196px 117px 50px 117px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 513px;
+  }
+  footer .top_menu {
+    width: 37%;
+  }
+  footer .middle_menu {
+    height: 77%;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    width: 27%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  footer .middle_menu ul {
+    margin-bottom: 0;
+  }
 }
