@@ -144,14 +144,15 @@ header nav ul li {
   margin-top: 37px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
   .hero h1 {
     font-size: 2em;
   }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1025px) {
   .hero h1 {
+    font-size: 2.2em;
     padding: 0 5em;
   }
 }
@@ -443,6 +444,9 @@ header nav ul li {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .testimonal .quote_wrapper .quote {
     display: -webkit-box;
@@ -457,6 +461,8 @@ header nav ul li {
     padding: 0.8em;
     height: 100%;
     line-height: 1.2em;
+    width: 363px;
+    height: 200px;
   }
   .testimonal .quote_wrapper .quote .profile {
     margin-top: 30px;
@@ -466,6 +472,14 @@ header nav ul li {
   }
   .testimonal .quote_wrapper .quote:nth-child(2) {
     margin: 0 25px;
+  }
+}
+
+@media (min-width: 1220px) {
+  .testimonal::before {
+    display: block;
+    content: url("../images/bg-quotes.png");
+    margin-left: 45px;
   }
 }
 
@@ -690,7 +704,7 @@ footer .end_menu ul li i {
 
 @media (min-width: 1220px) {
   footer {
-    padding: 196px 77px 50px 117px;
+    padding: 196px 77px 50px 105px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;

@@ -74,11 +74,12 @@ header {
         font-size: 1.6em;
         margin-top: 37px;
 
-        @media only screen and (min-width: 768px) {
+        @media only screen and (min-width: 769px) and (max-width: 1024px) {
             font-size: 2em;
         }
 
-        @media only screen and (min-width: 1024px) {
+        @media only screen and (min-width: 1025px) {
+            font-size: 2.2em;
             padding: 0 5em;
         }
     }
@@ -302,6 +303,7 @@ header {
     @media (min-width: 1025px) {
         .quote_wrapper {
             display: flex;
+            justify-content: center;
 
             .quote {
                 display: flex;
@@ -311,6 +313,8 @@ header {
                 padding: 0.8em;
                 height: 100%;
                 line-height: 1.2em;
+                width: 363px;
+                height: 200px;
 
                 .profile {
                     margin-top: 30px;
@@ -324,6 +328,14 @@ header {
                     margin: 0 25px;
                 }
             }
+        }
+    }
+
+    @media (min-width: 1220px) {
+        &::before {
+            display: block;
+            content: url("../images/bg-quotes.png");
+            margin-left: 45px;
         }
     }
 
@@ -514,7 +526,7 @@ footer {
     }
 
     @media (min-width:1220px) {
-        padding: 196px 77px 50px 117px;
+        padding: 196px 77px 50px 105px;
         flex-direction: row;
         height: 513px;
 
